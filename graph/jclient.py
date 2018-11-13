@@ -26,8 +26,8 @@ print("graph before increment")
 root.show()
 rootJSON = json.dumps(root, default=lambda inc: inc.__dict__)
 print(rootJSON)
-print(server.increment(rootJSON))
-
+f = open("request.json", "w")
+f.write(server.increment(rootJSON))
 rpc.close() # Closes the socket 's' also
 
 
