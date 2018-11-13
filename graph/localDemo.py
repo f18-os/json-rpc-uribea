@@ -1,3 +1,4 @@
+
 from node import *
 
 leaf1 = node("leaf1")
